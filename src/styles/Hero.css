@@ -1,0 +1,84 @@
+.main-hero{
+    max-width: 100%;
+    margin-left: 3rem;
+    background-color: rgba(242, 251, 249);
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto 3rem auto auto;
+}
+
+.hero{
+    width: 60%;
+}
+
+.hero-head{
+    text-transform: capitalize;
+    font-family: "Stack Sans Headline", serif;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+}
+
+.hero p{
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    margin-bottom: 3.3rem;
+}
+
+.hero-image{
+    width: 30%;
+    color: rgba(242, 251, 249);
+    background-color: rgba(242, 251, 249);
+}
+
+.hero-image img{
+    mix-blend-mode: multiply;
+    background-color: rgba(242, 251, 249);
+
+}
+
+.hero-links{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.hero-links a{
+    text-decoration: none;
+    border: 1px black solid;
+    padding: 10px 15px;
+    border-radius: 17px;
+}
+
+.get-start{
+    background-color: rgb(0, 73, 0);
+    color: white;
+    font-family: 'Roboto', serif;
+    font-weight: 600;
+    box-shadow: 2px 3px 3px 2px rgba(40, 38, 38, 0.363);
+
+}
+
+.flagged{
+    font-family: 'Roboto', serif;
+    font-weight: 600;
+    color: black;
+}
+
+.get-start:hover{
+    background: none;
+    color: black;
+    box-shadow: none;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 3px 20px 2px rgba(40, 38, 38, 0.363);
+}
+
+.flagged:hover{
+    box-shadow: 2px 3px 20px 2px rgba(40, 38, 38, 0.363);
+    transition: ease-in-out 0.3s;
+}
+

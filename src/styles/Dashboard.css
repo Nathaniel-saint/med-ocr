@@ -1,0 +1,164 @@
+.not-user-pro{
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    justify-content: left;
+    justify-self: right;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+.pro-ico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 1rem;
+    border: 1px rgb(187, 187, 187) solid;
+    padding: 0.5rem 1rem;
+    background-color: rgb(196, 196, 197);
+    font-family: 'Roboto';
+}
+
+.user-greeting{
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 2rem;
+    width: 22rem;
+}
+
+.user-greeting p{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.grid-stat-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-container{
+    height: 12rem;
+    width: 16rem;
+    background-color: aquamarine;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-container:hover{
+    cursor: pointer;
+    height: 12rem;
+    width: 16rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 3px 5px 5px rgb(180, 180, 180);
+    transition: ease-in-out 0.3s;
+}
+
+.stat-container *{
+    background: none;
+}
+
+.ico-container{
+    display: flex;
+}
+
+.ico-container span{
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.sum-scan-container{
+    background-color: white;
+}
+.sum-scan{
+    gap: 5.9rem;
+}
+
+.sum-scan span{
+    background-color: #DBF9E4;
+    color: #0cae3d;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.sum-icon{
+    color: #0cae3d;  
+}
+
+.count-flagged, .count-verified, .count-scan{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-family: 'Roboto';    
+}
+
+.count-flagged h4, .count-scan h4, .count-verified h4{
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.count-flagged h3{
+    color: #ff6251;
+}
+
+.count-verified{
+    color: #BEEDD7;
+}
+
+.count-scan h3, .count-verified h3, .count-flagged h3{
+    font-size: 2.8rem;
+    font-family: 'Roboto';
+    font-weight: 300;   
+}
+
+.flagged-scan{
+    gap: 5.5rem;
+}
+
+.flagged-scan span{
+    background-color: #FFDAD6;
+    color: rgb(254, 58, 58);
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.flagged-icon{
+    color: rgb(254, 58, 58);
+}
+
+.verified-container{
+    background-color: #0E3D2E;
+}
+
+.verified-container:hover{
+    box-shadow: 1px 3px 5px 5px rgb(168, 246, 158);
+    transition: ease-in-out 0.3s;
+}
+
+.verified-scan{
+    gap: 9rem;
+}
+
+.verified-scan span{
+    color: #BEEDD7;
+    border: 1px rgb(162, 250, 151) solid;
+    border-radius: 1rem;
+    padding: 0.3rem 1.2rem;
+}
+.verified-icon{
+    color: white;
+}

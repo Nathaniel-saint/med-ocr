@@ -1,0 +1,131 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-wrapper *{
+    background-color: white;
+}
+
+.login-wrapper{
+    display: flex;
+    background-color: white;
+    border: 0.8px rgb(193, 193, 193) solid;
+    border-radius: 3rem;
+    flex-direction: column;
+    align-self: center;
+    width: 25rem;
+    height: 40rem;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.login-logo{
+    font-family: 'Roboto', serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
+    color: #002519;
+}
+
+.login-greeting{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: #002410;
+}
+
+.login-mess{
+    color: #5B6860;
+    letter-spacing: 0.04rem;
+}
+
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 75%;
+    margin-top: 3rem;
+}
+
+.sign-in-form label{
+    display: flex;
+    margin-bottom: 0.3rem;
+    gap: 0.5rem;
+    
+}
+
+.sign-in-form input{
+    margin-bottom: 2rem;
+    height: 1.3rem;
+    background-color: #F2F4F6;
+    padding: 0.5rem 1rem;
+    border: #F2F4F6;
+}
+
+.sign-in-form input:focus{
+    margin-bottom: 2rem;
+    height: 1.3rem;
+    border: 0.5px #a0a1a2 solid;
+    background-color: #F2F4F6;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.radio-space{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    color: #191c1e;
+    font-family:'Roboto', serif;
+}
+
+.login-error-alert{
+    color: red; 
+    text-align: center;
+    margin-top: 1rem;
+}
+
+hr{
+    margin-top: 3rem;
+    height: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-notice{
+    align-self: center;
+    font-family: 'Roboto', serif;
+    letter-spacing: 0.05rem;
+}
+
+.login-notice a{
+    text-decoration: none;
+    color: #133128;
+}
+
+.sign-in-form button{
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: #002410;
+    color: white;
+    gap: 0.6rem;
+}
+
+.sign-in-form button:hover{
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: #003e1c;
+    color: white;
+    gap: 0.9rem;
+    transition: ease-in-out 0.2s;
+}

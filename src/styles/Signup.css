@@ -1,0 +1,136 @@
+.form-bg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: #F7F9FB;
+}
+
+.form-head{
+    font-family: "Roboto", serif;
+    margin-bottom: 2rem;
+}
+
+.form-wrapper{
+    background-color: white;
+    box-shadow: 2px 1px 10px 1px rgb(159, 158, 158);
+    border-radius: 2rem;
+    height: 25rem;
+    align-self: center;
+    padding: 2rem 3rem;
+}
+
+.form-wrapper *{
+    background-color: white;
+}
+
+.name-email-wrapper{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.name-wrapper, .email-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-wrapper, .email-wrapper, .password-wrapper{
+    font-family: 'Roboto', serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.password-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.instruct{
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+.name-wrapper label, .email-wrapper label, .password-wrapper label{
+    font-family: 'Roboto', serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+}
+
+.name-wrapper input, .email-wrapper input{
+    border: 1px rgb(211, 209, 209) solid;
+    border-radius: 2rem 2rem 0 0;
+    padding: 0.8rem 1rem;
+    width: 18rem;
+    background-color: #F2F4F6;
+}
+
+.name-wrapper input:focus, .email-wrapper input:focus{
+    border: 1px rgb(181, 181, 181) solid;
+    border-radius: 2rem 2rem 0 0;
+    padding: 0.8rem 1rem;
+    width: 18rem;
+    background-color: #F2F4F6;
+    outline: none;
+}
+
+.password-wrapper input{
+    border: 1px rgb(211, 209, 209) solid;
+    border-radius: 2rem 2rem 0 0;
+    padding: 0.8rem 2rem;
+    background-color: #F2F4F6;
+    width: 38rem;
+}
+
+.password-wrapper input:focus{
+    border: 1px rgb(181, 181, 181) solid;
+    border-radius: 2rem 2rem 0 0;
+    padding: 0.8rem 1rem;
+    background-color: #F2F4F6;
+    outline: none;  
+    width: 40rem;
+}
+
+.form-wrapper button{
+    background-color: #00261A;
+    color: white;
+    width: 42rem;
+    padding: 0.5rem ;
+    font-family: 'Roboto', serif;
+    font-weight: 500;
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+}
+
+.form-wrapper button:hover{
+    background-color: #014932;
+    color: white;
+    width: 42rem;
+    padding: 0.5rem ;
+    font-family: 'Roboto', serif;
+    font-weight: 500;
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+}
+
+.notice{
+    font-family: 'Roboto', serif;
+    font-size: 0.8rem;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.form-wrapper a{
+    color: #023a28;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.form-wrapper a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
