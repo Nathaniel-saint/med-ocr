@@ -33,13 +33,17 @@
     align-self: center;
 }
 
-.result-placeholder-text{
+.result-placeholder-text, .error-message{
     color: #a0aec0;
     font-size: 0.9rem;
     justify-self: center;
     align-self: center;
     position: fixed;
     top: 8rem;
+}
+
+.error-message{
+    top: 6rem;
 }
 
 .scanner-title {

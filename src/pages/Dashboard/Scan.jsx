@@ -284,13 +284,10 @@ return (
         </button>
     </div>
 
-        {error && <p className="error-message">{error}</p>}
-
-       
-        <div className="results-wrapper">
+      <div className="results-wrapper">
                 
-            {!verdict &&( <p className="result-placeholder-text">Result Placeholder</p>)}
-                
+         {!verdict &&( <p className="result-placeholder-text">Result Placeholder</p>)}
+          {error && <p className="error-message">{error}</p>}     
             {medicineData && (
                 <div className="data-card">
                 <h3 className="card-title">Extracted Information</h3>
@@ -314,6 +311,7 @@ return (
                 <p className="verdict-message">{verdict.message}</p>
                 </div>
             )}
+            
         </div>
   </div>
 );

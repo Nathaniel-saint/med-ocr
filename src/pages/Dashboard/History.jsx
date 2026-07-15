@@ -36,7 +36,7 @@ function History(){
                 <input type="search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="search by name or manufacturer" />
             </div>
             <table className="table">
-                <thead>
+                <thead className="table-head">
                     <tr>
                         <th>ID</th>
                         <th>NAME</th>
@@ -45,10 +45,10 @@ function History(){
                         <th>TIME</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="tbody">
                     {filteredHistory.length===0?
                     <tr>
-                        <td colSpan="5" className="empty-table-alert">
+                        <td colSpan={5} className="empty-table-alert">
                             {searchQuery ? "No matching records found." : "No scanned medicine yet."}
                         </td>
                     </tr>
@@ -57,7 +57,11 @@ function History(){
                             <td>{index+1}</td>
                             <td>{item.brandName}</td>
                             <td>{item.manufacturer}</td>
-                            <td>{item.verdict}</td>
+                            <td>
+                                <span className={`status-badge ${item.verdict?.toLowerCase()}`}>
+                                    {item.verdict}
+                                </span>
+                            </td>
                             <td>{item.time}</td>
                         </tr>
                         )
