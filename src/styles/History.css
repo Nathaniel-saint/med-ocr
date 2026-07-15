@@ -1,0 +1,32 @@
+.table-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 4rem;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;margin-bottom: 4rem;
+    border: 1px black solid;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    width: 53.8rem;
+}
+
+.search-container label{
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+.search-container input{
+    width: 40rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px black solid;
+    border-radius: 1rem;
+}
