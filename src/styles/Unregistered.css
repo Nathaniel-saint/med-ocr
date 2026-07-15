@@ -1,0 +1,52 @@
+.unregistered-flagged-container{
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 3px 3px rgb(146, 145, 145);
+    height: fit-content;
+}
+
+.unregistered-flagged-container h1{
+    align-self: center;
+    justify-self: center;
+    /* margin-top: 2rem; */
+    font-family: 'Roboto';
+    color: rgb(0, 73, 0);
+    letter-spacing: 0.5rem;
+    font-size: 4rem;
+    background-color: white;
+}
+
+.un-a{
+    display: flex;
+    gap: 1rem;
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(0, 73, 0);
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.un-a:hover{
+    display: flex;
+    gap: 1.3rem;
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(0, 73, 0);
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    transition: ease-in-out 0.3s;
+    text-decoration: underline;
+}
+
+.unregistered-body{
+    padding: 5rem 5rem;
+    background-color: white;
+}

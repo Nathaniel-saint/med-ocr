@@ -14,6 +14,7 @@ import History from "./pages/Dashboard/History";
 import Insight from "./pages/Dashboard/Insight";
 import ProtectedRoute from "./pages/Auth/ProtectedRoute";
 import './index.css'
+import Unregistered from "./pages/Dashboard/Unregistered";
 
 // import goes up there
 
@@ -26,6 +27,7 @@ function App(){
                     <Route path="/" element={<div className="home-page"><Nav /><Hero /> <Footer /></div> } />
                     <Route path="/register" element={<Signup />} />
                     <Route path="/login" element={<Signin />} />
+                    <Route path="/unregistered" element={<Unregistered />} />
 
                     <Route element={<ProtectedRoute />}>
                         <Route path="/dashboard" element={<Dashnav />}>

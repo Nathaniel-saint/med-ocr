@@ -24,7 +24,7 @@ const REGISTERED_DRUGS_DB = [
     dosage: "Composite"
   },
   {
-    brandName: "Wormplex 400",
+    brandName: "Wormplex",
     activeIngredient: "Albendazole",
     manufacturer: "Pharma Nova Ltd",
     dosage: "400mg"
@@ -195,10 +195,15 @@ const handleScanClick = async () => {
     let finalStatus = "UNREGISTERED";
     let finalMessage = "Warning: This product is not found in the registered medicine database list.";
 
-    if (data.name || data.manufacturer) {
-      const matchedDrug = REGISTERED_DRUGS_DB.find(
-        (drug) => drug.brandName.toLowerCase() === data.name.toLowerCase()
-      );
+    const scannedNames = data.name?.toLowerCase().trim() || "";
+    const scannedManufacturer = data.manufacturer?.toLowerCase().trim() || "";
+
+    if (scannedNames|| scannedManufacturer) {
+      const matchedDrug = REGISTERED_DRUGS_DB.find((drug) =>{
+        const baseDB = drug.brandName.toLowerCase().trim();
+
+        return scannedNames && (scannedNames.includes(baseDB) || baseDB.includes(scannedNames));
+      });
 
       if (matchedDrug) {
         finalStatus = "REGISTERED";

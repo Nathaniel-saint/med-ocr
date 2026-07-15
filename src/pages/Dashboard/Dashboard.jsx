@@ -30,7 +30,7 @@ function Dashboard(){
                 <div className="pro-ico">{firstName}<CgProfile/></div>
             </div>
             <div className="user-greeting">
-                <h2>Hello {user.fullname}</h2>
+                <h2>Hello, {user.fullname}</h2>
                 <p>The pharmaceutical verification system is active. All security protocols are currently within optimal regulatory parameters</p>
             </div>
 
