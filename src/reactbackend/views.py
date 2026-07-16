@@ -1,4 +1,5 @@
 import mimetypes
+import logging
 from django.conf import settings
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -12,6 +13,7 @@ from typing import List
 
 load_dotenv()
 
+logger = logging.getLogger(__name__)
 client = genai.Client()
 
 class MedicineData(BaseModel):
@@ -53,9 +55,12 @@ def scan_medicine(request):
         
         return Response(parsed_data, status=status.HTTP_200_OK)
 
-    except Exception as e:
-        print(f"!!! OCR Error Breakdown: {str(e)}") 
-        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    except Exception:
+        logger.exception("OCR processing failed in scan_medicine")
+        return Response(
+            {"error": "An internal error occurred while scanning the medicine image."},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
 
 
 class AIInsightsResponse(BaseModel):
