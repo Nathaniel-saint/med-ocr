@@ -35,6 +35,8 @@ function History(){
                 <label>Search <CiSearch size="1.2em"/></label>
                 <input type="search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="search by name or manufacturer..." />
             </div>
+            <div className="table-cont">
+
             <table className="table">
                 <thead className="table-head">
                     <tr>
@@ -68,6 +70,7 @@ function History(){
                     )}
                 </tbody>
             </table>
+            </div>
 
         </div>
     );

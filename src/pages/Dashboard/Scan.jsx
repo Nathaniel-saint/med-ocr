@@ -292,7 +292,6 @@ return (
       <div className="results-wrapper">
                 
          {!verdict &&( <p className="result-placeholder-text">Result Placeholder</p>)}
-          {error && <p className="error-message">{error}</p>}     
             {medicineData && (
                 <div className="data-card">
                 <h3 className="card-title">Extracted Information</h3>

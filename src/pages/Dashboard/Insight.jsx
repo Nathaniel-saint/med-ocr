@@ -6,12 +6,10 @@ function Insight() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
-    // 1. Fetch your scan timeline array directly from disk memory
     const raw_history = localStorage.getItem('medicine_history');
     const historyList = raw_history ? JSON.parse(raw_history) : [];
 
     const handleGenerateInsights = async () => {
-        // Guard clause: Ensure they have completed at least one package scan
         if (historyList.length === 0) {
             setError("Your medicine log history is completely empty. Scan a package file first to provide AI context.");
             return;
@@ -22,7 +20,6 @@ function Insight() {
         setInsights(null);
 
         try {
-            // 2. Transmit the raw structured data straight across the port link
             const response = await fetch("http://localhost:8000/api/analyze-history/", {
                 method: "POST",
                 headers: {
@@ -58,9 +55,7 @@ function Insight() {
             >
                 {loading ? "Analyzing Scan Ledger..." : "Generate History Insights"}
             </button>
-
-            {error && <p className="insight-error-alert">{error}</p>}
-
+            
             {insights && (
                 <div className="insights-results-wrapper">
                     
