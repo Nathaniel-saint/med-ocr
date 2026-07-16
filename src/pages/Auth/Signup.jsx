@@ -24,15 +24,14 @@ function Signup(){
         e.preventDefault();
         const userdata = {
             fullname: form.fullName,
-            email: form.email,
-            password: form.password
+            email: form.email
         }
 
         const temporarySessionMockToken = "auth_session_token_node_" + Date.now();
         localStorage.setItem("user_token", temporarySessionMockToken);
 
         localStorage.setItem('dummyUser',JSON.stringify(userdata));
-        console.log(userdata);
+        console.log({ fullname: userdata.fullname, email: userdata.email });
         navigate('/dashboard');
     }
 
